@@ -24,6 +24,7 @@ const Footer = () => {
             href="https://www.facebook.com/lucas.kepler.3/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="bx bxl-facebook"></i>
           </a>
@@ -32,6 +33,7 @@ const Footer = () => {
             href="https://www.instagram.com/lucas.kepler/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="bx bxl-instagram"></i>
           </a>
@@ -40,6 +42,7 @@ const Footer = () => {
             href="https://twitter.com/lucaskepler"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="bx bxl-twitter"></i>
           </a>
@@ -47,6 +50,7 @@ const Footer = () => {
             href="https://dribbble.com/ScryKL"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="bx bxl-dribbble"></i>
           </a>
@@ -54,6 +58,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/lucas-kepler-9b7152226/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="bx bxl-linkedin"></i>
           </a>

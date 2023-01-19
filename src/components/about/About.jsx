@@ -4,16 +4,7 @@ import AboutImg from "../../assets/lucas.png";
 import CV from "../../assets/CurriculoLucas.pdf";
 import Info from "./Info";
 
-function download(content, filename, contentType){
-    if(!contentType){
-        contentType = 'application/octet-stream';
-    }
-    var a = document.createElement('a');
-    var blob = new Blob([content], {'type':contentType});
-    a.href = window.URL.createObjectURL(blob);
-    a.download = filename;
-    a.click();
-}
+
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -28,7 +19,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          Hi! My name is Lucas Augusto Kepler, I'm Brazilian and I'm 20 years old, I'm looking to be a UI/UX Designer
+          Hi! My name is Lucas Augusto Kepler, I'm Brazilian and I'm 20 years old, I'm looking to be a UI/UX Designer 
           </p>
 
           <a download="" href={CV} className="button button--flex">

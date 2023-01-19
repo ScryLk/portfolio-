@@ -17,10 +17,6 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a  className="nav__logo">
-          
-        </a>
-
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">

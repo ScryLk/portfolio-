@@ -55,7 +55,7 @@
 }
 
 .qualification__subtitle {
-    display: inline-table;
+    display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
