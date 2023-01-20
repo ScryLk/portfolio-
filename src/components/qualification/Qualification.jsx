@@ -91,7 +91,7 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Senai</h3>
+                <h3 className="qualification__title">Tecnical</h3>
                 <span className="qualification__subtitle">
                 Industrial Electrician
 
