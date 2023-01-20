@@ -10,7 +10,6 @@ const Header = () => {
     else header.classList.remove("scroll-header");
   });
 
-  /*=============== Toggle Menu ===============*/
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 

@@ -129,6 +129,12 @@ img {
   margin-bottom: 4rem;
 }
 
+.section__other {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
 .section__title,
 .section__subtitle {
   text-align: center;
