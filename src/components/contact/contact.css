@@ -35,10 +35,12 @@
 .contact__card-title,
 .contact__card-data {
     font-size: var(--small-font-size);
+    
 }
 
 .contact__card-title {
     font-weight: var(--font-medium);
+    
 }
 
 .contact__card-data {
@@ -81,7 +83,7 @@
     width: 100%;
     height: 100%;
     border: 2px solid rgba(0, 0, 0, 0.3);
-    background: none;
+    background-color: var(--container-color);
     color: var(--text-color);
     outline: none;
     border-radius: 0.75rem;
@@ -95,16 +97,20 @@
     left: 1.25rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
-    background-color: var(--body-color);
+    color: var(black);
+    box-shadow: 10px;
     z-index: 10;
+    
 }
 
 .contact__form-area {
     height: 11rem;
+    
 }
 
 .contact__form-area textarea {
     resize: none;
+    
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -114,7 +120,8 @@
         column-gap: 3rem;
     }
   }
-  
+
+
   /* For medium devices */
   @media screen and (max-width: 768px) {
     .contact__container {

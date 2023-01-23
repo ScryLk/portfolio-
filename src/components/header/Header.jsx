@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import Darkmode from 'darkmode-js';
 
 const Header = () => {
   /*=============== Change Background Header ===============*/
@@ -9,6 +10,8 @@ const Header = () => {
     if (this.scrollY >= 80) header.classList.add("scroll-header");
     else header.classList.remove("scroll-header");
   });
+
+  new Darkmode().showWidget();
 
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");

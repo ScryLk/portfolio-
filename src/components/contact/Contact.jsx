@@ -18,6 +18,12 @@ const Contact = () => {
               <i className="bx bx-mail-send contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email</h3>
+              
+
+
+
+
+
               <span className="contact__card-data">lucaskepler992@gmail.com</span>
 
               <a

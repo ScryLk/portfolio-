@@ -1,6 +1,6 @@
 .scrollup {
     position: fixed;
-    right: 2.5rem;
+    right: 2.35rem;
     bottom: -20%;
     background-color: var(--title-color);
     opacity: 0.8;
@@ -21,7 +21,7 @@
 
 /* Show Scroll */
 .show-scroll {
-    bottom: 3rem;
+    bottom: 6rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
