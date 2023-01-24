@@ -72,7 +72,9 @@ const Contact = () => {
 
           <form  className="contact__form">
             <div className="contact__form-div">
+              <div className="specs">
               <label className="contact__form-tag">Name</label>
+              </div>
               <input
                 type="text"
                 name="name"
