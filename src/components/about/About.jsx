@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">Lucas Kepler </h2>
-      <span className="section__subtitle">About me</span>
+      <span className="section__subtitle">Sobre mim</span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
@@ -19,7 +19,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          Hi! My name is Lucas Augusto Kepler, I'm Brazilian and I'm 20 years old, I'm looking to be a UI/UX Designer 
+          Olá! Meu nome é Lucas Augusto Kepler, e tenho 20 anos de idade, sou brasileiro e busco em ser um UI/UX Designer 
           </p>
           
 

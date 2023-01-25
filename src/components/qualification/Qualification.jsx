@@ -24,7 +24,7 @@ const Qualification = () => {
             onClick={() => toggleTab(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            Educação
           </div>
 
           <div
@@ -36,7 +36,7 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+           Experiência
           </div>
         </div>
 
@@ -50,9 +50,9 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Start School</h3>
+                <h3 className="qualification__title">Começo na escola</h3>
                 <span className="qualification__subtitle">
-                Elementary School
+               Ensino fundamental
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2011 - 2016
@@ -75,7 +75,7 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">High School</h3>
+                <h3 className="qualification__title">Ensono médio</h3>
                 <span className="qualification__subtitle">
                 Poncho Verde
                 </span>
@@ -91,9 +91,9 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Tecnical</h3>
+                <h3 className="qualification__title">Técnico</h3>
                 <span className="qualification__subtitle">
-                Industrial Electrician
+                Eletricista industrial
 
                 </span>
                 <div className="qualification__calender">
@@ -115,12 +115,12 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Joined a Faculty</h3>
+                <h3 className="qualification__title">Entrei para a faculdade</h3>
                 <span className="qualification__subtitle">
                 Instituto Federal Farroupilha
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> 2022 - Presente
                   
                 </div>
                 
@@ -147,7 +147,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Joined a Brazilian Army</h3>
+                <h3 className="qualification__title">Ingressei no exército brasileiro</h3>
            
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt">2021 - 2022</i> 
@@ -173,14 +173,14 @@ const Qualification = () => {
 
 
               <div>
-                <h3 className="qualification__title">Internship
+                <h3 className="qualification__title">Estágio
 </h3>
                 <span className="qualification__subtitle">
                   Fockink | Gerando Soluções e Integrando Tecnologias
                  
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> 2022 - Presente
                   
                 </div>
                 

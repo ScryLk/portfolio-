@@ -10,7 +10,7 @@ const Services = () => {
 
   return (
     <section className="services section" id="services">
-      <h2 className="section__title">Skills</h2>
+      <h2 className="section__title">Habilidades</h2>
    
 
       <div className="services__container container grid">
@@ -23,7 +23,7 @@ const Services = () => {
           </div>
 
           <span className="services__button" onClick={() => toggleTab(1)}>
-            View More
+            Ver mais
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
@@ -47,13 +47,13 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  I make pleasant interactions for the user
+                  Eu faço interações agradeveis para o usuário
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">I value the experience</p>
+                  <p className="services__modal-info">Eu valorizo a experiência</p>
                 </li>
 
                 
@@ -71,7 +71,7 @@ const Services = () => {
           </div>
 
           <span onClick={() => toggleTab(2)} className="services__button">
-            View More
+            Ver mais
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
@@ -95,33 +95,28 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
+                    Eu desenvolvo interfaces para o usuário.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
+                  <p className="services__modal-info">Confecciono paginas web.</p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I create ux element interactions.
+                   Elementos UX.
                   </p>
                 </li>
 
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                  I prioritize the experience
-                  </p>
-                </li>
+             
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  I follow standards and adopt new ideas
+                  Eu sigo padrões já existente e sou criativo para adotar um novo.
                   </p>
                 </li>
               </ul>
@@ -138,7 +133,7 @@ const Services = () => {
           </div>
 
           <span onClick={() => toggleTab(3)} className="services__button">
-            View More
+            Ver mais
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
@@ -162,33 +157,23 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  I make logos and have a creative mind for names
+                  Eu faço logo marcas, e tenho um senso criativo para nomes
                   </p>
                 </li>
 
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
+            
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  I have good taste in color palette
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I position your company brand.
+                  Tenho um bom gosto para a escolha de paleta de cores.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                  I give my opinion about the use of the system.
+                  Eu dou minha opinião a respeito do uso do sistema.
                   </p>
                 </li>
               </ul>

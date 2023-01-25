@@ -97,7 +97,7 @@
 
 .contact__form-tag {
     position: absolute;
-    top: -0.75rem;
+    top: -1rem;
     left: 1.25rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
@@ -106,6 +106,7 @@
     background-color: var(--body-color);
     color: black;
     z-index: 10;
+    opacity: 0;
     
 }
 

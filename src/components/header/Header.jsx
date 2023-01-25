@@ -33,7 +33,7 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> Sobre
               </a>
             </li>
 
@@ -47,7 +47,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon"></i> Technical Level
+                <i className="uil uil-file-alt nav__icon"></i> Conhecimentos Técnicos
               </a>
             </li>
 
@@ -61,7 +61,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Skills
+                <i className="uil uil-briefcase-alt nav__icon"></i> Habilidades
               </a>
             </li>
 
@@ -79,7 +79,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
+                <i className="uil uil-briefcase-alt nav__icon"></i> Formações
               </a>
             </li>
 
@@ -107,7 +107,7 @@ const Header = () => {
                 }
               >
                 
-                <i className="uil uil-message nav__icon"></i> Contact
+                <i className="uil uil-message nav__icon"></i> Contato
               </a>
             </li>
           </ul>
