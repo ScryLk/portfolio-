@@ -8,6 +8,7 @@ const Skills = () => {
     <section className="skills section" id="skills">
       <h2 className="section__title"> Technical level</h2>
       
+      
 
       <div className="skills__container container grid">
         <Frontend />

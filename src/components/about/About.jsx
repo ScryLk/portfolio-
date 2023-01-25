@@ -8,7 +8,7 @@ import Info from "./Info";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">Lucas Kepler</h2>
+      <h2 className="section__title">Lucas Kepler </h2>
       <span className="section__subtitle">About me</span>
 
       <div className="about__container container grid">
@@ -21,6 +21,9 @@ const About = () => {
           <p className="about__description">
           Hi! My name is Lucas Augusto Kepler, I'm Brazilian and I'm 20 years old, I'm looking to be a UI/UX Designer 
           </p>
+          
+
+          
 
           <a download="" href={CV} className="button button--flex">
             Download CV
@@ -50,7 +53,15 @@ const About = () => {
               ></path>
             </svg>
           </a>
+    
+
+          
+
+
+
+
         </div>
+        
       </div>
     </section>
   );
