@@ -117,7 +117,7 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">Entrei para a faculdade</h3>
                 <span className="qualification__subtitle">
-                Instituto Federal Farroupilha
+                Técnologo em Sistemas para internet
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2022 - Presente
