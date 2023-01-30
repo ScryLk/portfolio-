@@ -173,6 +173,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  box-shadow: 1000px;
 }
 
 /*=============== BREAKPOINTS ===============*/

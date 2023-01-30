@@ -1,9 +1,23 @@
 import React from "react";
 import "./contact.css";
+import { useForm, useController } from "react-hook-form";
+
+
+
+
+
+
+
+
+
+
+
 
 const Contact = () => {
   
 
+  
+/* Sessão "Contatar" 21 - 60 */
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Me envie uma mensagem!</h2>
@@ -16,51 +30,29 @@ const Contact = () => {
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
-
               <h3 className="contact__card-title">Email</h3>
-              
-
-
-
-
-
               <span className="contact__card-data">lucaskepler992@gmail.com</span>
 
-              <a
-                href="lucaskepler992@gmail.com"
-                className="contact__button"
-              >
-                Contatar{" "}
+              <a href="lucaskepler992@gmail.com" className="contact__button"> Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
-
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">(55) 99133-3502</span>
-
-              <a
-
-                href="https://api.whatsapp.com/send?phone=5555991333502&text=Olá!, more information!"
-
-            
-                className="contact__button"
-              >
-                Contatar{" "}
+              
+              <a href="https://api.whatsapp.com/send?phone=5555991333502&text=Olá!" className="contact__button">Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon"></i>
-
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">lucas.kepler</span>
-
-              <a href="https://www.facebook.com/messages/t/100003504016808" className="contact__button">
-                Contatar{" "}
+              <a href="https://www.facebook.com/messages/t/100003504016808" className="contact__button">Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -69,10 +61,8 @@ const Contact = () => {
 
         <div className="contact__content">
           <h3 className="contact__title">Me escreva uma mensagem</h3>
-
           <form  className="contact__form">
             <div className="contact__form-div">
-            
               <input
                 type="text"
                 name="name"
@@ -80,9 +70,7 @@ const Contact = () => {
                 placeholder="Escreva seu nome"
               />
             </div>
-
             <div className="contact__form-div">
-               
               <input
                 type="email"
                 name="email"
@@ -90,18 +78,15 @@ const Contact = () => {
                 placeholder="Insira seu email"
               />
             </div>
-
             <div className="contact__form-div contact__form-area">
-          
-              <textarea
+            <textarea
                 name="project"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Escreva a sua mensagem"
-              ></textarea>
+                placeholder="Escreva a sua mensagem">
+            </textarea>
             </div>
-
             <button className="button button--flex">
              Enviar
               <svg
@@ -130,3 +115,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+

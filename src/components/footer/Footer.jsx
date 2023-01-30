@@ -5,20 +5,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
-
-
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
               Sobre
             </a>
           </li>
-
-       
-
-    
         </ul>
-
         <div className="footer__social">
           <a
             href="https://www.facebook.com/lucas.kepler.3/"
@@ -28,7 +21,6 @@ const Footer = () => {
           >
             <i className="bx bxl-facebook"></i>
           </a>
-
           <a
             href="https://www.instagram.com/lucas.kepler/"
             className="footer__social-link"
@@ -63,8 +55,6 @@ const Footer = () => {
             <i className="bx bxl-linkedin"></i>
           </a>
         </div>
-
-    
       </div>
     </footer>
   );
