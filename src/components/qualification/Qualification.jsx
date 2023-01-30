@@ -75,7 +75,7 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Ensono médio</h3>
+                <h3 className="qualification__title">Ensino médio</h3>
                 <span className="qualification__subtitle">
                 Poncho Verde
                 </span>
