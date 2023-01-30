@@ -1,17 +1,5 @@
 import React from "react";
 import "./contact.css";
-import { useForm, useController } from "react-hook-form";
-
-
-
-
-
-
-
-
-
-
-
 
 const Contact = () => {
   
