@@ -16,7 +16,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          Olá! Meu nome é Lucas Augusto Kepler, e tenho 20 anos de idade, sou brasileiro e busco em ser um UI/UX Designer 
+          Olá! Meu nome é Lucas Augusto Kepler, tenho 20 anos e sou apaixonado por tecnologia.
           </p>
           
 
