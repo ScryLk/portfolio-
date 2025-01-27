@@ -16,7 +16,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          Olá! Meu nome é Lucas Augusto Kepler, tenho 21 anos e sou apaixonado por tecnologia.
+          Olá! Meu nome é Lucas Augusto Kepler, tenho 22 anos e sou apaixonado por tecnologia.
           </p>
           
 
