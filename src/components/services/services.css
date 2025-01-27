@@ -1,34 +1,36 @@
+/* Container Principal dos Serviços */
 .services__container {
     grid-template-columns: repeat(3, 270px);
     justify-content: center;
     column-gap: 1.8rem;
 }
 
+/* Card de cada serviço */
 .services__content {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--container-color);
     padding: 6rem 0 2rem 2.5rem;
-    height: auto;
-
     border-radius: 1.25rem;
-
+    text-align: center;
 }
 
+/* Ícone de cada serviço */
 .services__icon {
     display: block;
-    font-size: 3.5rem; /* Aumentado de 2rem para 3.5rem */
+    font-size: 3.5rem; /* Aumentei o tamanho do ícone */
     color: var(--title-color);
     margin-bottom: var(--mb-1);
 }
 
-
+/* Título de cada serviço */
 .services__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
 }
 
+/* Botão "Ver Mais" */
 .services__button {
     color: var(--title-color);
     font-size: var(--small-font-size);
@@ -44,9 +46,10 @@
 }
 
 .services__button:hover .services__button-icon {
-    transform: translateX(00.25rem);
+    transform: translateX(0.25rem);
 }
 
+/* Estilo do Modal */
 .services__modal {
     position: fixed;
     top: 0;
@@ -61,17 +64,21 @@
     padding: 0 1rem;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .services__modal-content {
     width: 500px;
+    max-width: 90%; /* Ajusta a largura em telas menores */
     position: relative;
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
+    text-align: center; /* Centraliza o texto */
+    word-wrap: break-word; /* Garante que palavras longas não quebrem o layout */
 }
 
+/* Fechar Modal */
 .services__modal-close {
     position: absolute;
     top: 1.5rem;
@@ -81,58 +88,93 @@
     cursor: pointer;
 }
 
-.services__modal-title,
-.services__modal-description {
-    text-align: center;
-}
-
+/* Título do Modal */
 .services__modal-title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
 }
 
+/* Descrição no Modal */
 .services__modal-description {
-    font-size: var(--small-font-size);
-    padding: 0 3.5rem;
-    margin-bottom: var(--mb-2);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
+/* Lista de serviços no Modal */
 .services__modal-services {
+    display: grid;
+    grid-template-columns: 1fr;
     row-gap: 0.75rem;
 }
 
+/* Ícones e informações dos serviços no Modal */
 .services__modal-service {
     display: flex;
     align-items: center;
-    column-gap: .5rem;
+    column-gap: 0.5rem;
 }
 
 .services__modal-icon {
+    font-size: 1.2rem;
     color: var(--title-color);
-    font-size: 1.1rem;
 }
 
 .services__modal-info {
     font-size: var(--small-font-size);
 }
 
-/* Active Modal */
+/* Modal Ativo */
 .active-modal {
     opacity: 1;
     visibility: visible;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Para telas grandes */
+@media screen and (min-width: 1200px) {
+    .services__modal-content {
+        width: 600px; /* Aumenta o tamanho do modal em telas grandes */
+        padding: 5rem 3rem; /* Aumenta o espaço interno */
+    }
+
+    .services__modal-title {
+        font-size: 2rem; /* Tamanho maior para o título */
+    }
+
+    .services__modal-description {
+        font-size: 1.2rem; /* Tamanho maior para a descrição */
+        line-height: 1.8; /* Melhora a legibilidade */
+        padding: 0 1rem; /* Ajusta o espaçamento lateral */
+    }
+}
+
+/* Para telas médias */
 @media screen and (max-width: 992px) {
     .services__container {
         grid-template-columns: repeat(3, 218px);
     }
-  }
-  
-  /* For medium devices */
-  @media screen and (max-width: 768px) {
+
+    .services__content {
+        padding: 5rem 0 2rem 1.5rem;
+    }
+
+    .services__modal-content {
+        padding: 4rem 2rem;
+    }
+
+    .services__modal-title {
+        font-size: 1.8rem;
+    }
+
+    .services__modal-description {
+        font-size: 1rem;
+    }
+}
+
+/* Para telas pequenas */
+@media screen and (max-width: 768px) {
     .services__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -142,28 +184,33 @@
     }
 
     .services__icon {
-        font-size: 1.5rem;
+        font-size: 2.5rem; /* Ajusta o tamanho dos ícones em telas pequenas */
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+
     .services__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
+        padding: 3.5rem 1.5rem;
+    }
+
+    .services__modal-title {
+        font-size: 1.5rem;
     }
 
     .services__modal-description {
-        padding: 0;
+        font-size: 0.9rem;
     }
-  }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
+}
+
+/* Para telas muito pequenas */
+@media screen and (max-width: 576px) {
     .services__container {
         grid-template-columns: max-content;
     }
 
-    .services__content {
-        padding-right: 6rem;
+    .services__modal-content {
+        padding: 3rem 1rem;
     }
-  }
-  
+
+    .services__modal-description {
+        font-size: 0.8rem;
+    }
+}

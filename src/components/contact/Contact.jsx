@@ -1,27 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
-  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  
-/* Sessão "Contatar" 21 - 60 */
+  const [status, setStatus] = useState(""); // Status da mensagem
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5050/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Mensagem enviada com sucesso!");
+        setFormData({ name: "", email: "", message: "" }); // Limpa o formulário
+      } else {
+        setStatus("Erro ao enviar a mensagem. Tente novamente.");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar a mensagem:", error);
+      setStatus("Erro ao enviar a mensagem. Tente novamente.");
+    }
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Me envie uma mensagem!</h2>
-    
 
       <div className="contact__container container grid">
+        {/* Cartões de contato */}
         <div className="contact__content">
           <h3 className="contact__title">Entre em contato</h3>
-
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">lucaskepler992@gmail.com</span>
-
-              <a href="lucaskepler992@gmail.com" className="contact__button"> Contatar{" "}
+              <a
+                href="mailto:lucaskepler992@gmail.com"
+                className="contact__button"
+              >
+                Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -30,8 +67,11 @@ const Contact = () => {
               <i className="bx bxl-whatsapp contact__card-icon"></i>
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">(55) 99133-3502</span>
-              
-              <a href="https://api.whatsapp.com/send?phone=5555991333502&text=Olá!" className="contact__button">Contatar{" "}
+              <a
+                href="https://api.whatsapp.com/send?phone=5555991333502&text=Olá!"
+                className="contact__button"
+              >
+                Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -40,22 +80,30 @@ const Contact = () => {
               <i className="bx bxl-messenger contact__card-icon"></i>
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">lucas.kepler</span>
-              <a href="https://www.facebook.com/messages/t/100003504016808" className="contact__button">Contatar{" "}
+              <a
+                href="https://www.facebook.com/messages/t/100003504016808"
+                className="contact__button"
+              >
+                Contatar{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
         </div>
 
+        {/* Formulário de contato */}
         <div className="contact__content">
           <h3 className="contact__title">Me escreva uma mensagem</h3>
-          <form  className="contact__form">
+          <form className="contact__form" onSubmit={handleSubmit}>
             <div className="contact__form-div">
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
                 placeholder="Escreva seu nome"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="contact__form-div">
@@ -64,21 +112,27 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Insira seu email"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="contact__form-div contact__form-area">
-            <textarea
-                name="project"
+              <textarea
+                name="message"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Escreva a sua mensagem">
-            </textarea>
+                placeholder="Escreva a sua mensagem"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
             </div>
-            <button className="button button--flex">
-             Enviar
+            <button className="button button--flex" type="submit">
+              Enviar
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -96,6 +150,7 @@ const Contact = () => {
               </svg>
             </button>
           </form>
+          {status && <p className="contact__status">{status}</p>}
         </div>
       </div>
     </section>
@@ -103,6 +158,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-
