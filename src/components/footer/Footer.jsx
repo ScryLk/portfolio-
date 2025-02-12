@@ -39,12 +39,12 @@ const Footer = () => {
             <i className="bx bxl-twitter"></i>
           </a>
           <a
-            href="https://dribbble.com/ScryKL"
+            href="https://github.com/ScryLk"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bx bxl-dribbble"></i>
+            <i className="bx bxl-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/lucas-kepler-9b7152226/"
